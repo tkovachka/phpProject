@@ -47,9 +47,3 @@ php -S localhost:8000
 ```
 By visiting `http://localhost:8000` you can use the app.
 
-
-
-## Licence
-This project is open-source and available under the [MIT License](https://choosealicense.com/licenses/mit/).
-
-
