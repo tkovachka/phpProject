@@ -4,9 +4,11 @@ This project is a simple Books Management System built using PHP and SQLite for 
 The system allows users to:
 
 - Add and update books,
-- Store books data (title, author, genre, year, isbn) in an SQLite database.
-- Use JWT for authentication.
-- All sensitive configuration is managed through the `.env` file.
+- Delete books if the user has the Admin role,
+- Store books data (title, author, genre, year, isbn) in an SQLite database,
+- Use JWT for authentication,
+- All sensitive configuration is managed through the `.env` file,
+- Unauthorized users can only view the books.
 
 ## Requirements
 
