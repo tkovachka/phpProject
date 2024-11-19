@@ -1,3 +1,4 @@
 *.env
 .idea/
 vendor/
+database/books_db.sqlite
