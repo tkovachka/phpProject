@@ -23,13 +23,13 @@ Clone the project repository to your local machine
 ```
 git clone https://github.com/tkovachka/phpProject.git
 cd phpProject
+git checkout project-expense-system
 ```
 
 ### 2. Install dependencies
 ```
 composer install
 ```
-
 
 ### 3. Create an .env file
 Copy the necessary variables from `.env.example` to an `.env` file and give them values
@@ -38,9 +38,23 @@ cp .env.example .env
 ```
 - JWT_SECRET: A secret key for signing JWT tokens (use a strong, random key, you can execute the `generate_key.php` function).
 - WEBSITE_URL: The URL where you want to run the app. (example `http://localhost:8000`)
-  
 
-### 4. Running the project and using the application
+
+### 4. Setting up the database
+The database connection is handled in the `db.php` file.
+To create the necessary tables for the project, execute this file.
+If your current location is the root folder, you can use:
+```bash
+php db.php
+```
+You should now have a `database.sqlite` file in the `database` folder.
+You can try to run some SQL commands to make sure the tables are set up correctly:
+```sql
+SELECT * FROM expenses
+SELECT * FROM users
+```
+
+### 5. Running the project and using the application
 You can use the built-in PHP server to run the project
 ```
 php -S localhost:8000
