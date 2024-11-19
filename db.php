@@ -1,5 +1,6 @@
 <!-- execute once to create the database -->
 <?php
+//make sure to have an already created 'database' folder
 $dsn = 'sqlite:' . __DIR__ . '/database/database.sqlite';
 try {
     $pdo = new PDO($dsn);
