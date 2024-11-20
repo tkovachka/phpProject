@@ -1,0 +1,4 @@
+*.env
+.idea/
+vendor/
+notes_database.sqlite
